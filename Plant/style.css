@@ -1,0 +1,977 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visuality-hidden,
+.visuality-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Шрифты */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/* Оформление страницы */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.container {
+    width: 1152px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    padding: 16px 32px;
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    background-color: #066F14;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.6;
+}
+
+.button:active {
+    opacity: 0.3;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #1a1a1a;
+}
+
+.logo-header {
+    position: relative;
+    top: 46px;
+}
+
+.navigation-block {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    display: flex;
+
+    position: relative;
+    top: 19px;
+    left: 320px;
+}
+
+.navigation-block a {
+    padding: 12px 16px;
+    border-radius: 5px;
+    color: #1a1a1a;
+}
+
+.navigation-block a:hover,
+.navigation-block a:focus {
+    background-color: #066F14;
+    color: #ffffff;
+}
+
+.navigation-block a:active {
+    opacity: 0.6;
+}
+
+.site-navigation-list {
+    display: flex;
+    position: relative;
+    left: 54px;
+}
+
+.site-navigation-item {
+    margin-right: 18px;
+}
+
+.user-navigation-list {
+    display: flex;
+    margin-left: 106px;
+}
+
+.user-navigation-item {
+    margin-left: 30px;
+}
+
+.house-plants {
+    display: flex;
+    position: relative;
+    margin-top: 124px;
+}
+
+.house-plants::after {
+    content: url("./svg/leaf.svg");
+    position: absolute;
+    left: 454px;
+    top: 308px;
+}
+
+.house-plants-block h2 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 92px;
+}
+
+.house-plants-block p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.3px;
+
+    color: #4A4A4A;
+
+    position: relative;
+    top: 25px;
+}
+
+.house-plants-block a {
+    position: relative;
+    top: 75px;
+}
+
+.house-plants-table {
+    position: relative;
+    top: 138px;
+}
+
+.house-plants-table tr:first-child {
+    font-family: "Nunito", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: start;
+
+    color: #001B04;
+}
+
+.house-plants-table tr:last-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.house-plants-table td {
+    padding-right: 110px;
+    padding-top: 10px;
+}
+
+.house-plants-image {
+    position: relative;
+    left: 4px;
+    bottom: 50px;
+}
+
+.house-plants-image p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    padding: 16px 32px;
+    background: rgba(6, 111, 20, 0.7);
+    border-radius: 4px;
+
+    position: absolute;
+    top: -22px;
+    left: 120px;
+}
+
+
+.dot-1 div,
+.dot-2 div,
+.dot-3 div {
+    width: 6px;
+    height: 6px;
+
+    background-color: #F4C300;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.31);
+
+    border-radius: 100%;
+    position: relative;
+}
+
+.dot-1 div::after,
+.dot-2 div::after,
+.dot-3 div::after {
+    content: "";
+    width: 114px;
+    height: 4px;
+
+    background-color: #066F14;
+
+    position: absolute;
+    left: 6px;
+    top: 1px;
+}
+
+.dot-1 {
+    position: relative;
+    left: 327px;
+    bottom: 626px;
+}
+
+.dot-2 {
+    transform: rotate(180deg);
+    position: relative;
+    right: 344px;
+    bottom: 530px;
+}
+
+.dot-2 p {
+    transform: rotate(180deg);
+    left: 100px;
+}
+
+.dot-2 div::after {
+    width: 95px;
+}
+
+.dot-3 {
+    position: relative;
+    left: 369px;
+    bottom: 158px;
+}
+
+.dot-3 p {
+    left: 78px;
+}
+
+.dot-3 div::after {
+    width: 72px;
+}
+
+.plant-collection {
+    display: flex;
+}
+
+.plant-collection h2 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: -0.2px;
+
+    position: relative;
+    top: 32px;
+}
+
+.plant-collection a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.3px;
+
+    color: #4A4A4A;
+
+    position: relative;
+    top: 64px;
+}
+
+.plant-collection a::after {
+    content: url("./svg/arrow-rigth.svg");
+    position: relative;
+    left: 10px;
+    bottom: 1px;
+}
+
+.plant-collection a:hover::after {
+    content: url("./svg/arrow-rigth-green.svg");
+    position: relative;
+    left: 10px;
+    bottom: 1px;
+}
+
+.plant-collection a:hover,
+.plant-collection a:focus {
+    color: #066F14;
+    opacity: 0.8;
+}
+
+.plant-collection a:active {
+    opacity: 0.4;
+}
+
+.plant-collection-image {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+
+    position: relative;
+    top: 32px;
+    left: 82px;
+
+}
+
+.about-us {
+    display: flex;
+    margin-top: 160px;
+}
+
+.about-us-image {
+    position: relative;
+    top: 40px;
+    left: 96px;
+}
+
+.green-square {
+    display: block;
+    width: 446px;
+    height: 440px;
+
+    background-color: #066F14;
+
+    position: absolute;
+    z-index: -1;
+    right: 70px;
+    bottom: 40px;
+}
+
+
+.about-us-block {
+    margin-left: 180px;
+}
+
+.about-us-block h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #066F14;
+
+    position: relative;
+    right: 2px;
+}
+
+.about-us-block h3 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.3px;
+
+    position: relative;
+    top: 10px;
+    right: 3px;
+}
+
+.about-us-block p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.3px;
+
+    color: #4A4A4A;
+
+    position: relative;
+    top: 35px;
+    right: 4px;
+}
+
+.about-us-offer-2 p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.6px;
+
+    color: #4A4A4A;
+
+}
+
+.about-us-block a {
+    position: relative;
+    top: 98px;
+    right: 4px;
+}
+
+.best-product {
+    position: relative;
+    margin-top: 168px;
+}
+
+.best-product h2 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+
+    position: relative;
+    left: 416px;
+}
+
+.best-link-list {
+    display: flex;
+
+    position: relative;
+    left: 415px;
+    top: 18px;
+}
+
+.best-link-list li {
+    margin-left: 25px;
+}
+
+.best-link-list a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+
+    color: #4A4A4A;
+}
+
+.best-link-list a:hover,
+.best-link-list a:focus {
+    color: #066F14;
+}
+
+.best-link-list a:active {
+    opacity: 0.6;
+}
+
+.name-product {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+
+    color: #1A1A1A;
+
+    position: relative;
+    top: 18px;
+    left: 30px;
+}
+
+.product p:last-child {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+
+    color: #1A1A1A;
+}
+
+.product-list {
+    display: flex;
+
+    position: relative;
+    top: 66px;
+    left: 8px;
+}
+
+.product-list li:first-child {
+    background-color: #EAF2E5;
+}
+
+.product-list li:nth-child(2) {
+    background-color: #F0EBE6;
+}
+
+.product-list li:nth-child(3) {
+    background-color: #E2ECE4;
+}
+
+.product-list li:last-child {
+    background-color: #E7EEED;
+}
+
+.product-item {
+    width: 280px;
+
+    position: relative;
+    height: 283px;
+    margin-right: 20px;
+}
+
+.product-item::after {
+    content: url("./svg/stars.svg");
+    position: absolute;
+    bottom: 54px;
+    left: 31px;
+}
+
+.price {
+    position: relative;
+    top: 52px;
+    left: 32px;
+}
+
+.product-list img {
+    position: relative;
+    left: 64px;
+    top: 12px;
+}
+
+.product-item:hover,
+.product-item:focus {
+    opacity: 0.8;
+}
+
+.product-item:active {
+    opacity: 0.6;
+}
+
+.best-product-button {
+    position: relative;
+    top: 115px;
+    left: 510px;
+}
+
+.review {
+    display: flex;
+
+    position: relative;
+    margin-top: 260px;
+}
+
+.review h2 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.review p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.3px;
+
+    position: relative;
+    top: 12px;
+}
+
+.review img {
+    position: relative;
+    left: 55px;
+}
+
+.review-block {
+    width: 597px;
+    height: 204px;
+
+
+    background: #066F14;
+    color: #ffffff;
+
+    position: absolute;
+    top: 182px;
+}
+
+.review-block img {
+    position: relative;
+    top: 20px;
+    left: 32px;
+}
+
+.user-name {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+
+    position: relative;
+    left: 20px;
+}
+
+.job-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    position: relative;
+    left: 20px;
+}
+
+.review-block p:last-child {
+    position: relative;
+    left: -48px;
+    top: 34px;
+}
+
+.review-block div {
+    position: relative;
+    left: 82px;
+    bottom: 50px;
+}
+
+.review-block button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+
+    background-color: #143B19;
+}
+
+.review-buttons {
+    margin-top: 34px;
+    margin-left: 459.2px;
+}
+
+.review-block button:hover,
+.review-block button:focus {
+    background-color: #FFFFFF;
+}
+
+.review-block button:active {
+    opacity: 0.6;
+}
+
+.review-block::after {
+    content: url("./svg/covichky.svg");
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}
+
+.review-back {
+    position: relative;
+    left: 8px;
+}
+
+.review-back::after {
+    content: url("./svg/arrow-left.svg");
+}
+
+.review-forward::after {
+    content: url("./svg/arrow-rigth.svg");
+}
+
+.newsletter {
+    width: 1040px;
+    height: 320px;
+
+    background-color: #DFFFE3;
+    border-radius: 6px;
+
+    position: relative;
+    margin-top: 163px;
+    margin-left: 56px;
+}
+
+.newsletter h2 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+
+    position: relative;
+    top: 60px;
+    left: 56px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.3px;
+
+    position: relative;
+    left: 56px;
+    top: 74px;
+}
+
+.newsletter form {
+    width: 451px;
+    height: 56px;
+
+    background-color: #ffffff;
+    border-radius: 4px;
+
+    position: relative;
+    top: 104px;
+    left: 60px;
+}
+
+.newsletter-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    padding: 12px 18px;
+
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.input-email {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    width: 320px;
+    padding: 12px 18px;
+
+    position: relative;
+    top: 6.8px;
+    left: 9.8px;
+}
+
+.input-email:focus{
+    background-color: #DFFFE3;
+}
+
+.newsletter::after {
+    content: url("./svg/klipartz.svg");
+    position: absolute;
+    right: 24px;
+    top: -35px;
+}
+
+.follow-instagram {
+    margin-top: 78px;
+}
+
+.follow-instagram h2 {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: center;
+
+    position: relative;
+}
+
+.follow-instagram p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.3px;
+
+    color: #4A4A4A;
+
+    position: relative;
+    top: 14px;
+}
+
+.follow-instagram-list {
+    display: flex;
+    margin-top: 55px;
+}
+
+.follow-instagram-list li {
+    position: relative;
+}
+
+.follow-instagram-list li:hover::before,
+.follow-instagram-list li:focus::before {
+    content: url("./svg/big-insta.svg");
+    position: absolute;
+    top: 86px;
+    left: 80px;
+}
+
+.follow-instagram-list li:active::before {
+    opacity: 0.6;
+}
+
+.main-footer {
+    display: flex;
+    margin-top: 128px;
+    margin-bottom: 160px;
+}
+
+.main-footer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.3px;
+
+    color: #5A5A5A;
+
+    position: relative;
+    top: 20px;
+}
+
+.social-list {
+    display: flex;
+
+    position: relative;
+    right: 15px;
+    top: 46px;
+}
+
+.social-list li {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+
+    background-color: #EDFFDD;
+
+    margin-left: 15px;
+}
+
+.social-list svg {
+    position: relative;
+    top: 10px;
+}
+
+.social-list li:hover path,
+.social-list li:focus path,
+.social-list li:hover,
+.social-list li:focus {
+    fill: #EDFFDD;
+    background-color: #066F14;
+}
+
+.social-list li:active {
+    opacity: 0.6;
+}
+
+.navigation-table {
+    position: relative;
+    left: 210px;
+}
+
+.navigation-table td {
+    width: 242px;
+}
+
+.navigation-table tr {
+    height: 38px;
+}
+
+.navigation-table a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: start;
+
+    color: #5A5A5A;
+}
+
+.navigation-table-title a {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+
+    color: #1A1A1A;
+}
+
+.navigation-table a:hover,
+.navigation-table a:focus {
+    color: #066F14;
+}
+
+.navigation-table a:active {
+    opacity: 0.6;
+}
