@@ -672,7 +672,7 @@ position: absolute;
 
     position: relative;
     top: 44px;
-    left: 8px;
+    left: 10px;
 }
 
 .our-online-item {
@@ -723,7 +723,7 @@ position: absolute;
 .our-online-button {
     position: relative;
     top: 140px;
-    left: 477px;
+    left: 479px;
 }
 
 .our-online-line-vertical {
@@ -897,12 +897,15 @@ position: absolute;
     border: 1px solid #EBEBEB;
 }
 
-.latest a {
+.latest-button {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    
     padding: 12.5px 48px;
+
     background-color: #000000;
+    color: #FFFFFF;
 
     position: relative;
     top: 1px;
