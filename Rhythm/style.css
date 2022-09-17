@@ -1,0 +1,910 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visuality-hidden,
+.visuality-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*--------------------*/
+
+/* Шрифты */
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./font/poppins/Poppins-Regular.woff") format("woff"), url("./font/poppins/Poppins-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./font/poppins/Poppins-Bold.woff") format("woff"), url("./font/poppins/Poppins-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: "Cal Sans";
+    src: url("./font/cal-sans/fonts/webfonts/CalSans-SemiBold.woff") format("woff"), url("./font/cal-sans/fonts/webfonts/CalSans-SemiBold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    color: #121212;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+    padding: 18px 48px;
+
+    color: #FFFFFF;
+    background: #FF6428;
+    border-radius: 40px;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.title {
+    font-family: "Cal Sans", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 53px;
+
+    color: #000000;
+}
+
+.title span {
+    color: #FF6428;
+}
+
+.logo {
+    position: relative;
+    top: 62px;
+    right: 3px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+
+    position: relative;
+    top: 36px;
+    left: 258px;
+}
+
+.site-navigation a {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    color: rgba(18, 18, 18, 0.4);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #FF6428;
+}
+
+.site-navigation a:active {
+    opacity: 0.6;
+}
+
+.guitars-online {
+    margin-top: 190px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    right: 00px;
+}
+
+.guitars-online h2 {
+    font-family: "Cal Sans", Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 67px;
+
+    color: #121212;
+}
+
+.guitars-online p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+
+    color: #666666;
+
+    margin-top: 8px;
+}
+
+.guitars-online a {
+    position: relative;
+    top: 50px;
+}
+
+.guitars-online-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+
+    position: relative;
+    bottom: 25px;
+    left: 232px;
+}
+
+.apple svg {
+    position: relative;
+    bottom: 2px;
+}
+
+.guitars-online-logo a:hover path,
+.guitars-online-logo a:focus path {
+    fill: #FF6428;
+}
+
+.guitars-online-logo a:active path {
+    opacity: 0.6;
+}
+
+.guitars-online-image {
+    position: relative;
+    bottom: 243px;
+    left: 190px;
+}
+
+.guitars-online-image::before {
+    content: url("./svg/butterfly.svg");
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    padding-top: 28px;
+
+    background-color: #ffffff;
+    border-radius: 100%;
+
+
+    position: absolute;
+    top: 546px;
+    left: 348px;
+}
+
+.products {
+    position: relative;
+    margin-top: -76px;
+}
+
+.products a:hover p,
+.products a:focus p {
+    color: #FF6428;
+}
+
+.products a:active {
+    opacity: 0.6;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+.products h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+
+    color: #121212;
+
+    position: relative;
+    margin-top: 85px;
+}
+
+.top-selling-block {
+    position: relative;
+    top: 36px;
+}
+
+.new-list,
+.top-selling-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.top-selling-list {
+    position: relative;
+    top: 32px;
+}
+
+.new-list {
+    margin-top: 32px;
+}
+
+.products-name {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    color: #121212;
+
+    position: relative;
+    top: 40px;
+}
+
+.price {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #666666;
+
+    position: relative;
+    top: 46px;
+}
+
+.show-all {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    color: #868686;
+
+    position: relative;
+    left: 1126px;
+    bottom: 302px;
+}
+
+.top-selling-block .show-all {
+    position: relative;
+    bottom: 274px;
+}
+
+.show-all:hover,
+.show-all:focus {
+    color: #FF6428;
+}
+
+.show-all:active {
+    opacity: 0.6;
+}
+
+.categories {
+    margin-top: 268px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1088px;
+
+    position: relative;
+    top: 75px;
+    left: 56px;
+}
+
+.categories-list p {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    position: relative;
+    top: 220px;
+}
+
+.categories-list li:hover p,
+.categories-list li:focus p {
+    color: #FF6428;
+}
+
+.categories-list li:active {
+    opacity: 0.6;
+}
+
+.categories-item-1 {
+    background: url("./img/acoustic.jpg");
+    width: 220px;
+    height: 280px;
+}
+
+.categories-item-2 {
+    background: url("./img/electric.jpg");
+    width: 220px;
+    height: 280px;
+}
+
+.categories-item-3 {
+    background: url("./img/basses.jpg");
+    width: 220px;
+    height: 280px;
+}
+
+.categories-item-4 {
+    background: url("./img/collections.jpg");
+    width: 220px;
+    height: 280px;
+}
+
+.brands {
+    margin-top: 302px;
+}
+
+.brands h2 {
+    text-align: center;
+
+    position: relative;
+    left: 36px;
+}
+
+.brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1374px;
+
+    position: relative;
+    top: 88px;
+    left: 98px;
+}
+
+.brands-list a:hover,
+.brands-list a:focus {
+    opacity: 0.6;
+}
+
+.brands-list a:active {
+    opacity: 0.3;
+}
+
+.brands-item {
+    text-align: center;
+
+    width: 145px;
+    height: 89px;
+
+    margin-right: 150px;
+    margin-bottom: 60px;
+}
+
+.casak-dizainer-1 {
+    position: relative;
+    bottom: 20px;
+    right: 8px;
+}
+
+.casak-dizainer-2 {
+    position: relative;
+    bottom: 10px;
+}
+
+.casak-dizainer-3 {
+    position: relative;
+    right: 8px;
+}
+
+.casak-dizainer-4 {
+    position: relative;
+    top: 16px;
+    right: 4px;
+}
+
+.rhythm {
+    height: 508px;
+
+    background-color: #121212;
+    color: #FFFFFF;
+
+    margin-top: 178px;
+}
+
+.rhythm-block {
+    position: relative;
+    top: 100px;
+}
+
+.rhythm h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.rhythm-list {
+    display: flex;
+    justify-content: space-around;
+    width: 1350px;
+
+    position: relative;
+    top: 110px;
+    right: 78px;
+}
+
+.rhythm-item {
+    text-align: center;
+}
+
+.rhythm-item div {
+    width: 72px;
+    height: 72px;
+
+    background-color: #262626;
+    border-radius: 20px;
+
+    position: relative;
+    bottom: 40px;
+    left: 66px;
+}
+
+.rhythm-item img {
+    padding-top: 20px;
+}
+
+.rhythm-item h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.rhythm-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #666666;
+
+    position: relative;
+    top: 10px;
+}
+
+.reviews {
+    margin-top: 248px;
+}
+
+.reviews-block {
+    display: flex;
+    position: relative;
+}
+
+.reviews h2 {
+    text-align: center;
+}
+
+.reviews-image {
+    width: 284.72px;
+    height: 257.89px;
+
+    background: #FF6428;
+    border-radius: 70px 0px 400px 400px;
+    transform: rotate(-7.72deg);
+
+    position: relative;
+    top: 158px;
+    left: 114px;
+}
+
+.reviews-image img {
+    border-radius: 100%;
+
+    position: relative;
+    bottom: 44px;
+    left: 66px;
+}
+
+.user-review {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 160%;
+
+    color: #666666;
+
+    position: relative;
+    top: 132px;
+    left: 366px;
+}
+
+.reviews-block h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+
+    color: #000000;
+
+    position: relative;
+    top: 340px;
+    right: 150px;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.08em;
+
+    color: #868686;
+
+    position: relative;
+    top: 348px;
+    right: 150px;
+}
+
+.radio-slaider-list {
+    display: flex;
+
+    position: absolute;
+    top: 385px;
+    right: 20px;
+}
+
+.radio-slaider-list li {
+    margin-right: 26px;
+}
+
+.slaider-radio-label {
+    cursor: pointer;
+}
+
+.slaider-radio-label input[type="radio"]+.slaider {
+    position: absolute;
+    width: 10px;
+    height: 16px;
+
+    background: #C4C4C4;
+    border-radius: 20px;
+}
+
+.slaider-radio-label input[type="radio"]:focus+.slaider,
+.slaider-radio-label input[type="radio"]:hover+.slaider {
+    opacity: 1;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.slaider-radio-label input[type="radio"]:checked+.slaider {
+    content: "";
+    background-color: #FF6428;
+}
+
+/* Слайды */
+
+.slide-1 {
+    display: flex;
+    /* display: none; */
+}
+
+.slide-2 {
+    display: flex;
+    display: none;
+}
+
+.slide-3 {
+    display: flex;
+    display: none;
+}
+
+.slide-4 {
+    display: flex;
+    display: none;
+}
+
+.rhythm-mobail {
+    display: flex;
+    margin-top: 548px;
+    margin-left: 14px;
+}
+
+.rhythm-mobail h2 {
+    text-align: start;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+
+    width: 484px;
+
+    color: #000000;
+}
+
+.mobail-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+
+    margin-top: 53px;
+}
+
+.mobail-logo a:hover,
+.mobail-logo a:focus {
+    opacity: 0.8;
+}
+
+.mobail-logo a:active {
+    opacity: 0.6;
+}
+
+.mobail-image {
+    position: relative;
+    bottom: 198px;
+    left: 88px;
+}
+
+.main-footer {
+    height: 380px;
+    background: #EEEEEE;
+    margin-top: -162px;
+}
+
+.main-footer a:hover path,
+.main-footer a:focus path,
+.main-footer a:hover,
+.main-footer a:focus {
+    fill: #FF6428;
+    color: #FF6428;
+}
+
+.main-footer a:active path,
+.main-footer a:active {
+    opacity: 0.6;
+}
+
+.main-footer-block {
+    display: flex;
+    position: relative;
+}
+
+.logo-and-address {
+    margin-top: 82px;
+    margin-left: 36px;
+}
+
+.logo-and-address svg {
+    position: absolute;
+    left: -45px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    left: 48px;
+}
+
+.address a {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+
+    color: #666666;
+
+    position: relative;
+    margin-top: 24.5px;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 324px;
+
+    position: relative;
+    top: 80px;
+    left: 278px;
+}
+
+.footer-navigation a {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: rgba(18, 18, 18, 0.6);
+}
+
+.footer-navigation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 151px;
+}
+
+.first-item a {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    color: #FF6428;
+}
+
+.footer-navigation a:active {
+    opacity: 0.6;
+}
+
+.footer-social {
+    position: relative;
+    top: 82px;
+    left: 438px;
+}
+
+.footer-social h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+.copyright-link {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: rgba(18, 18, 18, 0.6);
+
+    position: absolute;
+    top: 313px;
+    right: 550px;
+}
+
+.copyright-link:hover,
+.copyright-link:focus {
+    color: #FF6428;
+}
+
+.copyright-link:active {
+    opacity: 0.6;
+}
